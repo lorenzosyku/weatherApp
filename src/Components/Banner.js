@@ -19,7 +19,7 @@ function Banner({WeatherInfo, setWeatherInfo}) {
       method: 'GET',
       url: 'https://community-open-weather-map.p.rapidapi.com/forecast/daily',
       params: {
-        q: inputRef.value || 'san francisco,us',
+        q: inputRef.current.value || 'san francisco,us',
         units: 'imperial'
       },
       headers: {
